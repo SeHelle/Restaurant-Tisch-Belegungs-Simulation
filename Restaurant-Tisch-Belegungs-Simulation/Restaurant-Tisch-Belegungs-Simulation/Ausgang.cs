@@ -7,13 +7,15 @@ namespace Restaurant_Tisch_Belegungs_Simulation
 
         public void stuehleFreigeben()
         {
-                for (int stuehle = 1; stuehle < AnzahlTische; stuehle++)
+                for (int stuehle = 1; stuehle <= GruppeTisch.Count+1; stuehle++)
                 {
-                    if(neueBelegung.ContainsKey("Tisch" + stuehle))
-                    {
-                        Console.WriteLine("Leider verlässt uns Tisch" + stuehle);
-                        FreieStuehleTisch["Tisch" + stuehle] = alteBelegung["Tisch" + stuehle];
-                        neueBelegung.Remove("Tisch" + stuehle);
+                if (GruppeTisch.ContainsKey("Tisch" + stuehle))
+                {
+                    Console.WriteLine("Leider verlässt uns" + GruppeTisch["Tisch"+stuehle]);
+                    
+
+                    FreieStuehleTisch["Tisch" + stuehle] = alteBelegung["Tisch" + stuehle];
+                    GruppeTisch.Remove("Tisch" + stuehle);
 
                     }
 
