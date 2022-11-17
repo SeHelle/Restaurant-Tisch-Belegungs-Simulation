@@ -11,11 +11,12 @@ namespace Restaurant_Tisch_Belegungs_Simulation
         public static Dictionary<string, int> neueBelegung = new Dictionary<string, int>();
         public static Dictionary<string, int> alteBelegung = new Dictionary<string, int>();
         public static List<string> TischeMitBelgung = new List<string>();
+        public static int AnzahlTische = FreieStuehleTisch.Count;
 
         static void Main(string[] args)
         {
-            new Restaurant().bauen();
-            new Gruppen().getPersonen();
+            new Restaurant().erzeugeStuehle(2,10);
+            new Gruppen().getPersonen(2,10);
 
             Console.WriteLine("Willkommen in unserem Restaurant!");
             new Tischzuweisung().freienTischfinden();
