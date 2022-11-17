@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{B5AA4BF5-0F6E-43F9-8089-0A5C04FBBF64}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Restaurant-Tisch-Belegungs-Simulation/Tischzuweisung.cs">
+    <Files>
+      <File FileName="Restaurant-Tisch-Belegungs-Simulation/Program.cs" Line="1" Column="1" />
+      <File FileName="Restaurant-Tisch-Belegungs-Simulation/Restaurant.cs" Line="1" Column="1" />
+      <File FileName="Restaurant-Tisch-Belegungs-Simulation/Tischzuweisung.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Restaurant-Tisch-Belegungs-Simulation" expanded="True">
+            <Node name="Restaurant-Tisch-Belegungs-Simulation" expanded="True">
+              <Node name="Tischzuweisung.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Restaurant-Tisch-Belegungs-Simulation PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
