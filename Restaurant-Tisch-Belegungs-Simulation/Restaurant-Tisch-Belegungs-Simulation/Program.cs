@@ -22,6 +22,4 @@ namespace Restaurant_Tisch_Belegungs_Simulation
             new Ausgang().stuehleFreigeben();
         }
     }
-
-
 }
