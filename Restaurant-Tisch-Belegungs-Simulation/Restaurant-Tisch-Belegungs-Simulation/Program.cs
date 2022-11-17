@@ -10,7 +10,6 @@ namespace Restaurant_Tisch_Belegungs_Simulation
         public static Dictionary<string, int> PersonenGruppe = new Dictionary<string, int>();
         public static Dictionary<string, int> neueBelegung = new Dictionary<string, int>();
         public static Dictionary<string, int> alteBelegung = new Dictionary<string, int>();
-        public static List<string> TischeMitBelgung = new List<string>();
         public static int AnzahlTische = FreieStuehleTisch.Count;
 
         static void Main(string[] args)
