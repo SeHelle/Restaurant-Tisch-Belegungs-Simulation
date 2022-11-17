@@ -12,8 +12,9 @@ namespace Restaurant_Tisch_Belegungs_Simulation
            
                 for(int gruppe =1; gruppe <= PersonenGruppe.Count; gruppe ++)
                 {
-                    try
-                        {
+                    if(FreieStuehleTisch.ContainsKey("Tisch" + stuehle) && PersonenGruppe.ContainsKey("Gruppe" + gruppe))
+                   
+                     {
                             if (FreieStuehleTisch["Tisch" + stuehle] >= PersonenGruppe["Gruppe" + gruppe])
                             {
                              Console.WriteLine("Gruppe " + gruppe + " nehmen Sie doch bitte an Tisch"+stuehle+" Platz");
@@ -24,11 +25,8 @@ namespace Restaurant_Tisch_Belegungs_Simulation
                              FreieStuehleTisch.Remove("Tisch" + stuehle);
                              PersonenGruppe.Remove("Gruppe" + gruppe);
                             }
-                    } catch
-                    {
-                        continue;
                     }
-              
+
                     
                 }
             }
@@ -38,7 +36,7 @@ namespace Restaurant_Tisch_Belegungs_Simulation
             {
                 for (int gruppe = 1; gruppe < PersonenGruppe.Count; gruppe++)
                 {
-                    try
+                    if(neueBelegung.ContainsKey("Tisch" + stuehle) && PersonenGruppe.ContainsKey("Gruppe" + gruppe))
                     {
                         if (neueBelegung["Tisch" + stuehle] >= PersonenGruppe["Gruppe" + gruppe])
                         {
@@ -49,12 +47,7 @@ namespace Restaurant_Tisch_Belegungs_Simulation
                             GruppeTisch.Add("Tisch" + stuehle, "Gruppe" + gruppe);
                         }
                     }
-                    catch
-                    {
-                        continue;
-                    }
-
-
+  
                 }
 
             }
@@ -62,16 +55,9 @@ namespace Restaurant_Tisch_Belegungs_Simulation
 
             for (int gruppe = 0; gruppe < PersonenGruppe.Count; gruppe++)
             {
-                try { 
-                if(PersonenGruppe["Gruppe"+gruppe] !=0)
-                    {
-                        Console.WriteLine("Gruppe " + gruppe + "! Leider haben wir heute keinen Platz für Sie");
-                    }
-                
-                }catch
-                {
-                    continue;
-
+                if(PersonenGruppe.ContainsKey("Gruppe"+gruppe))
+                { 
+                  Console.WriteLine("Gruppe " + gruppe + "! Leider haben wir heute keinen Platz für Sie");
                 }
             }
         }

@@ -6,12 +6,9 @@ namespace Restaurant_Tisch_Belegungs_Simulation
     class Restaurant : Program
     {   
 
-        public void bauen()
-        {
-            getStuehle();
-        }
+       
            
-        public int getTische (){
+        public int erzeugeTische (){
 
             var Tables = new Random();
 
@@ -22,21 +19,21 @@ namespace Restaurant_Tisch_Belegungs_Simulation
         }
 
         
-        public void getStuehle()
+        public void erzeugeStuehle(int von, int bis)
         {
             List<string> BelegungStuehle = new List<string>();
 
-            int tables = getTische();
+            int tables = erzeugeTische();
 
             for (int i = 1; i < tables; i++)
             {
                 Random stuehle = new Random();
-                int AnzahlStuehle = stuehle.Next(2, 10);
+                int AnzahlStuehle = stuehle.Next(von, bis);
                 FreieStuehleTisch.Add("Tisch" + i, AnzahlStuehle);
-              
+                
             }
 
-          
+          AnzahlTische = FreieStuehleTisch.Count;
         }
 
 

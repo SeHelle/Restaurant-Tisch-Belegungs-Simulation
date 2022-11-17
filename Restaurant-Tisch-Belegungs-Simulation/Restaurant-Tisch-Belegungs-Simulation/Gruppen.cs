@@ -14,7 +14,7 @@ namespace Restaurant_Tisch_Belegungs_Simulation
 
         }
 
-        public void getPersonen()
+        public void getPersonen(int von, int bis)
         {
             Dictionary<string, bool> BelegungStuehle = new Dictionary<string, bool>();
 
@@ -23,7 +23,7 @@ namespace Restaurant_Tisch_Belegungs_Simulation
             for (int i = 1; i < gruppen; i++)
             {
                 Random personen = new Random();
-                int AnzahlPersonen = personen.Next(2, 10);
+                int AnzahlPersonen = personen.Next(von, bis);
                 Program.PersonenGruppe.Add("Gruppe" + i, AnzahlPersonen);
             }
 
