@@ -1,0 +1,10 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <RootNamespace>Restaurant_Tisch_Belegungs_Simulation</RootNamespace>
+    <StartupObject>Restaurant_Tisch_Belegungs_Simulation.Program</StartupObject>
+  </PropertyGroup>
+
+</Project>
