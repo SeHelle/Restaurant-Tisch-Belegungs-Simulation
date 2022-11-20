@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Restaurant_Tisch_Belegungs_Simulation
 {
-    class Gruppen
+    class Gruppen: Program
 
     {
         int AnzahlGruppen()
@@ -24,7 +24,8 @@ namespace Restaurant_Tisch_Belegungs_Simulation
             {
                 Random personen = new Random();
                 int AnzahlPersonen = personen.Next(von, bis);
-                Program.PersonenGruppe.Add("Gruppe" + i, AnzahlPersonen);
+                PersonenGruppe.Add("Gruppe" + i, AnzahlPersonen);
+                MappingGruppen.Add("Gruppe" + 1, AnzahlPersonen);
             }
 
         }

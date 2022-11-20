@@ -8,6 +8,7 @@ namespace Restaurant_Tisch_Belegungs_Simulation
         public static Dictionary<string, int> FreieStuehleTisch = new Dictionary<string, int>();
         public static Dictionary<string, string> GruppeTisch = new Dictionary<string, string>();
         public static Dictionary<string, int> PersonenGruppe = new Dictionary<string, int>();
+        public static Dictionary<string, int> MappingGruppen = new Dictionary<string, int>();
         public static Dictionary<string, int> neueBelegung = new Dictionary<string, int>();
         public static Dictionary<string, int> alteBelegung = new Dictionary<string, int>();
         public static int AnzahlTische;
