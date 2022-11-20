@@ -2,26 +2,21 @@
 
 namespace Restaurant_Tisch_Belegungs_Simulation
 {
-    class Ausgang : Program
+    class Ausgang : BenoetigeDictionarys
     {
-
         public void stuehleFreigeben()
         {
-                for (int stuehle = 1; stuehle <= GruppeTisch.Count+1; stuehle++)
+                for (int stuehle = 1; stuehle <= gruppeTisch.Count+1; stuehle++)
                 {
-                if (GruppeTisch.ContainsKey("Tisch" + stuehle))
-                {
-                    Console.WriteLine("Leider verlässt uns" + GruppeTisch["Tisch"+stuehle]);
-
-                    int PersonenGruppe = MappingGruppen[GruppeTisch["Tisch" + stuehle]];
-                    int NochFreieStuehle = neueBelegung["Tisch" + stuehle];
-                    FreieStuehleTisch["Tisch" + stuehle] = NochFreieStuehle + PersonenGruppe;
-                    GruppeTisch.Remove("Tisch" + stuehle);
-
+                 if (gruppeTisch.ContainsKey("Tisch" + stuehle))
+                    {
+                        Console.WriteLine("Leider verlässt uns" + gruppeTisch["Tisch"+stuehle]);
+                        int personenGruppe = mappingGruppen[gruppeTisch["Tisch" + stuehle]];
+                        int nochFreieStuehle = neueBelegung["Tisch" + stuehle];
+                        freieStuehleTisch["Tisch" + stuehle] = nochFreieStuehle + personenGruppe;
+                        gruppeTisch.Remove("Tisch" + stuehle);
                     }
-
                 }
-
         }
     }
 }
