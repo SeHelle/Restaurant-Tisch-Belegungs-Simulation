@@ -2,7 +2,7 @@
 
 namespace Restaurant_Tisch_Belegungs_Simulation
 {
-    class Tischzuweisung : Program
+    class Tischzuweisung : BenoetigteDictionary
     {
         public void freienTischfinden()
         {

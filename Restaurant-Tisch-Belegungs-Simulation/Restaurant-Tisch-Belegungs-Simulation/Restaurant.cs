@@ -2,7 +2,7 @@
 
 namespace Restaurant_Tisch_Belegungs_Simulation
 {
-    class Restaurant : Program
+    class Restaurant : BenoetigteDictionary
     {  
         private static int erzeugeTische ()
         {

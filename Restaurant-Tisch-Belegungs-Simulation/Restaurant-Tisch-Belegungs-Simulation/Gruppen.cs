@@ -1,9 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace Restaurant_Tisch_Belegungs_Simulation
 {
-    class Gruppen: Program
+    class Gruppen: BenoetigteDictionary
     {
         int anzahlGruppen()
         {
@@ -14,18 +13,17 @@ namespace Restaurant_Tisch_Belegungs_Simulation
 
         public void getPersonen(int von, int bis)
         {
-            Dictionary<string, bool> belegungStuehle = new Dictionary<string, bool>();
-
             int gruppen = anzahlGruppen();
 
             for (int i = 1; i < gruppen; i++)
             {
                 Random personen = new Random();
-                int AnzahlPersonen = personen.Next(von, bis);
-                personenGruppe.Add("Gruppe" + i, AnzahlPersonen);
-                mappingGruppen.Add("Gruppe" + 1, AnzahlPersonen);
+                int anzahlPersonen = personen.Next(von, bis);
+                personenGruppe.Add("Gruppe" + i, anzahlPersonen);
+                mappingGruppen.Add("Gruppe" + i, anzahlPersonen);
             }
 
         }
+
     }
 }

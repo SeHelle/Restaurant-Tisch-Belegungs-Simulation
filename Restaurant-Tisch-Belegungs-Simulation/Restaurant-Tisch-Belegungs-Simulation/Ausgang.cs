@@ -2,7 +2,7 @@
 
 namespace Restaurant_Tisch_Belegungs_Simulation
 {
-    class Ausgang : BenoetigeDictionarys
+    class Ausgang : BenoetigteDictionary
     {
         public void stuehleFreigeben()
         {

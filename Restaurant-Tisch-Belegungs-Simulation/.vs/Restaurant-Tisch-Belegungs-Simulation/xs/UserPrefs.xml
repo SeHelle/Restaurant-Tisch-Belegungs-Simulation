@@ -1,18 +1,19 @@
 ﻿<Properties StartupConfiguration="{B5AA4BF5-0F6E-43F9-8089-0A5C04FBBF64}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Restaurant-Tisch-Belegungs-Simulation/Ausgang.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Restaurant-Tisch-Belegungs-Simulation/BenoetigteDictionary.cs">
     <Files>
-      <File FileName="Restaurant-Tisch-Belegungs-Simulation/Program.cs" Line="11" Column="61" />
-      <File FileName="Restaurant-Tisch-Belegungs-Simulation/Tischzuweisung.cs" />
-      <File FileName="Restaurant-Tisch-Belegungs-Simulation/Ausgang.cs" Line="18" Column="94" />
-      <File FileName="Restaurant-Tisch-Belegungs-Simulation/Gruppen.cs" />
-      <File FileName="Restaurant-Tisch-Belegungs-Simulation/Restaurant.cs" />
+      <File FileName="Restaurant-Tisch-Belegungs-Simulation/Program.cs" Line="16" Column="18" />
+      <File FileName="Restaurant-Tisch-Belegungs-Simulation/Tischzuweisung.cs" Line="5" Column="49" />
+      <File FileName="Restaurant-Tisch-Belegungs-Simulation/Ausgang.cs" Line="5" Column="21" />
+      <File FileName="Restaurant-Tisch-Belegungs-Simulation/Gruppen.cs" Line="6" Column="41" />
+      <File FileName="Restaurant-Tisch-Belegungs-Simulation/Restaurant.cs" Line="14" Column="18" />
+      <File FileName="Restaurant-Tisch-Belegungs-Simulation/BenoetigteDictionary.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Restaurant-Tisch-Belegungs-Simulation" expanded="True">
             <Node name="Restaurant-Tisch-Belegungs-Simulation" expanded="True">
-              <Node name="Ausgang.cs" selected="True" />
+              <Node name="BenoetigteDictionary.cs" selected="True" />
             </Node>
           </Node>
         </State>
